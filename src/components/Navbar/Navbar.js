@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "bulma/css/bulma.css";
 
 const Navbar = () => {
   const BASE_URL = "https://newsapi.org/v2/everything";
   const [data, setData] = useState([]);
-  const [topic, setTopic] = useState();
+  const [topic, setTopic] = useState("auto-industry");
   const getData = () => {
     axios
       .get(
@@ -18,11 +19,42 @@ const Navbar = () => {
   }, [topic]);
   return (
     <div>
-      <button onClick={() => setTopic("volkswagen")}>Volkswagen</button>
-      <button onClick={() => setTopic("mercedes")}>Mercedes</button>
-      <button onClick={() => setTopic("audi")}>Audi</button>
-      <button onClick={() => setTopic("bmw")}>Bmw</button>
-      <h1>lkasjdklsajdk</h1>
+      <button
+        className="button is-link is-light"
+        style={{
+          marginLeft: 20,
+        }}
+        onClick={() => setTopic("volkswagen")}
+      >
+        Volkswagen
+      </button>
+      <button
+        style={{
+          marginLeft: 20,
+        }}
+        className="button is-light"
+        onClick={() => setTopic("mercedes")}
+      >
+        Mercedes
+      </button>
+      <button
+        style={{
+          marginLeft: 20,
+        }}
+        className="button is-black"
+        onClick={() => setTopic("audi")}
+      >
+        Audi
+      </button>
+      <button
+        style={{
+          marginLeft: 20,
+        }}
+        className="button is-link"
+        onClick={() => setTopic("bmw")}
+      >
+        Bmw
+      </button>
     </div>
   );
 };
