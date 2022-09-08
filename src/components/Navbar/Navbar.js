@@ -24,25 +24,25 @@ const Navbar = () => {
         className="button is-link is-light mx-6 my-6 px-6"
         onClick={() => setTopic("formula1")}
       >
-        Volkswagen
+        Formula 1
       </button>
       <button
         className="button is-light mx-6 my-6 px-6"
-        onClick={() => setTopic("mercedes")}
+        onClick={() => setTopic("verstappen")}
       >
-        Mercedes
+        Verstappen
       </button>
       <button
         className="button is-black mx-6 my-6 px-6"
-        onClick={() => setTopic("audi")}
+        onClick={() => setTopic("hamilton")}
       >
-        Audi
+        Hamilton
       </button>
       <button
         className="button is-link mx-6 my-6 px-6"
-        onClick={() => setTopic("bmw")}
+        onClick={() => setTopic("leclerc")}
       >
-        Bmw
+        Leclerc
       </button>
       <Body data={data} />
     </div>
