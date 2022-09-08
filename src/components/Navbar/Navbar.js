@@ -19,7 +19,7 @@ const Navbar = () => {
     getData();
   }, [topic]);
   return (
-    <div>
+    <div className="has-background-info">
       <button
         className="button is-link is-light mx-6 my-6 px-6"
         onClick={() => setTopic("formula1")}
