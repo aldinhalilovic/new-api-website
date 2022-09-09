@@ -23,7 +23,7 @@ const Body = ({ data }) => {
                   </figure>
                   <div className="media-content">
                     <div className="content ">
-                      <p className="is-family-primary ">
+                      <p className="is-family-primary is-size-6 has-text-left">
                         <strong>{el.author}</strong> <br />
                         <small>
                           <a href={el.url} target="_blank">
@@ -31,10 +31,10 @@ const Body = ({ data }) => {
                           </a>
                         </small>{" "}
                         <br />
-                        <small>{el.publishedAt}</small>
+                        {/* <small>{el.publishedAt}</small> */}
                         <br />
                         <strong>{el.title}</strong>
-                        <br />
+                        {/* <br /> */}
                         <br />
                         {el.content}
                       </p>
